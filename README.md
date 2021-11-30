@@ -1,8 +1,8 @@
-# LaRoSeDa - A Large Romanian Sentiment Data Set
+# SentRoL - Sentimental analysis applied on the Romanian language
 
 ## License Agreement
 
-**Copyright (C) 2021 - Anca Maria Tache, Mihaela Gaman, Radu Tudor Ionescu**
+**Copyright (C) 2021 - Nandor Csereoka**
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 
@@ -12,12 +12,9 @@ You are free to **share** (copy and redistribute the material in any medium or f
 - **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 - **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
-## Citation
+## Acknowledgements
 
-Please cite the corresponding work (see citation.bib file to obtain the citation in [BibTex](citation.bib) format) if you use this data set and software (or a modified version of it) in any scientific work:
-
-**[1] Anca Maria Tache, Mihaela Gaman, Radu Tudor Ionescu. Clustering Word Embeddings with Self-Organizing Maps. Application on
-LaRoSeDa – A Large Romanian Sentiment Data Set. In Proceedings of EACL, pp. 949–956, 2021.  [(link to paper)](https://www.aclweb.org/anthology/2021.eacl-main.81.pdf).**
+Many thanks to Anca Maria Tache, Mihaela Gaman, and Radu Tudor Ionescu for providing the **LaRoSeDa** dataset and the corresponding approach outlined in the paper[3].
 
 ## Dataset
 
@@ -92,3 +89,6 @@ For the fusion with the string kernels representation we used [String Kernels im
 **[1] Radu T. Ionescu, Marius Popescu. PQ kernel: a rank correlation kernel for visual word histograms. Pattern Recognition Letters, vol. 55, pp. 51-57, 2015. [(PQK 1.0 software)](http://pq-kernel.herokuapp.com/)**
 
 **[2] Marius Popescu and Radu Tudor Ionescu. The Story of the Characters, the DNA and the Native Language. Proceedings of the Eighth Workshop on Innovative Use of NLP for Building Educational Applications, pp. 270–278, 2013. [(String Kernels 1.0 software)](http://string-kernels.herokuapp.com/)**
+
+**[3] Anca Maria Tache, Mihaela Gaman, Radu Tudor Ionescu. Clustering Word Embeddings with Self-Organizing Maps. Application on
+LaRoSeDa – A Large Romanian Sentiment Data Set. In Proceedings of EACL, pp. 949–956, 2021.  [(link to paper)](https://www.aclweb.org/anthology/2021.eacl-main.81.pdf).**
