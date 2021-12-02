@@ -1,4 +1,4 @@
-# SentRoL - Sentimental analysis applied on the Romanian language
+# SentRoL - Sentimental analysis on Romanian language samples
 
 ## License Agreement
 
