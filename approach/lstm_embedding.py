@@ -1,13 +1,13 @@
 import numpy as np
-from keras.layers import Embedding, Flatten, Dense
-from keras.models import Sequential
-from keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.layers import LSTM, Embedding, Dropout, Dense
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 class Config:
-    def __init__(self, embedding_dim, max_words, max_len):
-        # Dimension of the embedding layer
-        self.embedding_dim = embedding_dim
+    def __init__(self, dim, max_words, max_len):
+        # Dimension 
+        self.dim = dim
 
         # How many words from the dataset to consider in total
         self.max_words = max_words
@@ -50,9 +50,10 @@ def train(config, tokenizer, x, y):
 
 def instantiate_model(config, input_length):
     model = Sequential()
-    model.add(Embedding(config.max_words, config.embedding_dim, input_length=input_length))
-    model.add(Flatten())
-    model.add(Dense(32, activation='relu'))
+    model.add(Embedding(config.max_words, config.dim, input_length=input_length))
+    model.add(Dropout(0.3))
+    model.add(LSTM(config.dim, return_sequences=True, dropout=0.3, recurrent_dropout=0.2))
+    model.add(LSTM(config.dim, dropout=0.3, recurrent_dropout=0.2))
     model.add(Dense(1, activation='sigmoid'))
 
     print('\n\nPreparing to train the following model:\n')
